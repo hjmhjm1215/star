@@ -60,14 +60,16 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #header .header_top{width: calc(100% - 170px);
                     text-align: right;  float: left;
                     }            
-#header .language{margin-top: 10px;
+#header .language{margin-top: 10px; 
                   display: inline-block; position: relative; 
-                  width: 4rem; text-align: center;/**/}   
+                  width: 4rem; text-align: center;/**/ }   
 #header .language ul{position: absolute; top: 1.25rem; left: 0; 
-                     display: none;} 
+                     transition: 0.9s;height:0; overflow: hidden;
+                     margin-left: 3px;} 
 #header .language ul li{margin-left: 5px;}
-#header .language:hover ul{display: block;}
-#header .language button{background: none; border: none;}
+#header .language ul li a{font-size: 0.8rem;}
+#header .language:hover ul{height: 200px;}
+#header .language button{background: none; border: none; font-size: 0.9rem;}
 #header .sitemap{background: none; border: none;}
 #header .pop_open{font-size: 0.9rem; margin-left: 10px;}
 
@@ -81,7 +83,7 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #header #nav .depth1 ul{background-color: rgba(0, 0, 0, 0.5);
                        font-size: 0.9rem; 
                         color: #fff;
-                        width: 70%; 
+                        width: 75%; 
                         padding: 20px 0 ;
                         position: absolute; 
                         left: 0;
@@ -95,14 +97,14 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*하위메뉴 사이에 점넣을려면 배경그림으로 만들기 background:url(../) no-repeat*/
 #header #nav .depth1 ul li:last-child{background:none;}
 /*********************section1****************************/
-#section1{position: relative; content: ''; display: block; clear: both;}
-#section1 .slider{width: 1920px; }
-#section1 .slider img{width: 100%;}
-#section1 #notice{width: 1450px; height: 40px; 
-                 background-color: rgba(255, 255, 255, 0.5); 
-                 position: absolute; top:610px ; left: 350px;
-                 line-height: 40px; overflow: hidden;}
-#section1 #notice .info{float: left; width: 500px;}
+#section1{position: relative; content: ''; display: block; clear: both; min-width: 1024px;}
+#section1 .slider{width: 100%; min-width: 1024px;}
+#section1 .slider img{width: 100%; min-width: 1024px;}
+#section1 #notice{width: 100%; height: 40px; min-width: 1024px;
+                 background-color: rgba(110, 64, 64, 0.5); 
+                 position: absolute; top:604px ; left: 350px;
+                 line-height: 40px; overflow: hidden;  }
+#section1 #notice .info{float: left; width: 500px; }
 #section1 #notice .info p{float: left; font-size: 1rem; margin-right: 15px;
                           font-weight: 600; color: #121212;}
 #section1 #notice .serch{float: right; margin-right: 300px; width: 300px;}
@@ -169,17 +171,24 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*********************section2****************************/
 
 /*********************section3****************************/
-#section3{margin-top: 110px; background-color: cornsilk;}
+#section3{margin-top: 110px; background-color: cornsilk; }
 #section3::after{content: ''; display: block; clear: both;}
 #section3 h2{padding-top: 70px; text-align: center;}
 #section3 h3{margin-top: 20px; text-align: center;}
 
 
 #section3 .regular {width: 100%; min-width: 1024px; margin: 30px auto; padding: 0;}
-
-#section3 .regular .slick-slide {width: 100%; margin: 0 50px; }
+#section3 .regular .slick-slide {width: 100%; margin: 0 50px; position: relative;}
 #section3 .regular .slick-slide img{width: 90%;  margin: 0 auto; margin-bottom: 70px;} 
+#section3 .regular .txt1{ width: 440px; height: 295px; 
+                         position: absolute; top: 0; left: -565px; overflow: hidden; }
+#section3 .regular .txt1 .txt1_01{text-align: center; font-size: 1.5rem; color: #fff;
+                                   margin-top: 90px; overflow: hidden;}
+#section3 .regular .txt1 .txt1_02{text-align: center; font-size: 1rem; color: #fff;
+                                   margin-top: 30px; line-height: 20px; overflow: hidden;}                           
+                    
 
+#section3 .regular div:hover .txt1{transition: 0.8s; opacity: 0.8; background-color: #808080; }
 #section3 .slick-arrow{position: absolute; top: 40%; z-index: 9999;
        width: 100px; height: 50px; background: none; 
        border: 2px solid transparent; display: block;
@@ -246,6 +255,8 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section6 .event_box{float: left; margin-top: 30px; margin-left: 150px; margin-bottom: 110px;}
 #section6 .event_box li{float: left; margin-left: 20px;}
 #section6 .event_box li:first-child{margin-left: 0;}
+#section6 .event_box .scale{transition: all 0.8s;  transform: scale(0.9);}
+#section6 .event_box .smaller{ transition: all 0.8s;transform: scale(1);}
 /*********************section6****************************/
 
 

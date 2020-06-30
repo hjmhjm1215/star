@@ -90,7 +90,20 @@ $(function(){
         }
       })
 
-
+      $(".event_box img").mouseover(function(){
+ 
+        $(this).removeClass("smaller");
+     
+        $(this).addClass("scale");
+      })
+ 
+      $(".event_box img").mouseleave(function(){
+     
+        $(this).removeClass("scale");
+     
+        $(this).addClass("smaller");
+     
+      })
 
 
 })
