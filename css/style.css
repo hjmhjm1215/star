@@ -1,0 +1,268 @@
+.inner{max-width: 1280px; min-width: 1024px;
+       margin: 0 auto;}
+h2{font-size: 1.875rem; color: #000;}
+h3{font-size: 1.25rem; color: #bbbbbb;}
+
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+/*********************header****************************/
+#quick{width:60px;height:390px; background-color: #fff; 
+       position:fixed; right:30px;top:70px;z-index: 99999;
+       border-radius: 30px;}
+#quick li img{width: 100%;}       
+#quick li{margin-bottom: 6px;} 
+#quick li:last-child{margin-bottom: 0;}      
+.popup{width: 100%; min-width: 1024px; }
+.popup img{width: 100%;}
+.popup .pop_close{position: absolute; top: 35px; right: 50px;}
+.all_box{width: 100%; height: 100%; position: fixed; z-index: 9999;
+         background: linear-gradient(to bottom, rgba(255,230,168,1) 0%,rgba(255,214,94,1) 50%,rgba(254,191,4,1) 100%); 
+         display: none;}
+.all_box .all_logo {width: 200px; margin-left: 200px; margin-top: 150px;}
+.all_box .all_logo img{width: 100%;}
+.all_box #nav{float: left; width: 100%; margin-left: 300px; margin-top: 100px;}
+.all_box .depth1 > li{float: left; margin-right: 80px;
+                      margin-bottom: 100px; text-align: center; }
+.all_box .depth1 > li:last-child{margin-right: 0;}
+.all_box .depth1 > li > a{font-size: 1.8rem; color: #fff;  }
+.all_box .depth1 .sub li{margin-top: 20px; line-height: 40px; text-align: center;}
+.all_box button{float: right; margin-right: 250px; margin-top: -50px;}
+
+/*********************슬라이더 디자인****************/
+.slider{min-width: 1024px; margin: 0 auto;} 
+.lazy{min-width: 1024px; }
+.slick-arrow{position: absolute; top: 50%; z-index: 9999;
+             width: 100px; height: 50px; background: none; 
+             border: 2px solid transparent; display: block;
+             text-indent: -999999px;}
+.slick-prev{left:50px; background: url("../images/left.png") no-repeat 0 50%;}
+.slick-next{right:50px; background: url("../images/right.png") no-repeat 0 50%;}
+.slick-dots{position: absolute; bottom:50px; 
+            width: 100%; text-align: center; }
+.slick-dots li{display: inline-block; margin:0 5px; }
+.slick-dots li button{display: block; border: none;
+                     text-indent: -999999px;
+                     width: 10px; height: 10px;
+                     border-radius: 50%;
+                     background-color: rgba(0, 0, 0, 0.5);}
+.slick-dots li.slick-active button{background-color: #fff;}
+/**********************슬라이더 디자인 끝***************/
+
+
+
+
+#header:after{content: ''; display: block; clear: both;}
+#header .logo{width: 170px; float: left;}
+#header .logo img{width: 100%;}
+#header .header_top{width: calc(100% - 170px);
+                    text-align: right;  float: left;
+                    }            
+#header .language{margin-top: 10px;
+                  display: inline-block; position: relative; 
+                  width: 4rem; text-align: center;/**/}   
+#header .language ul{position: absolute; top: 1.25rem; left: 0; 
+                     display: none;} 
+#header .language ul li{margin-left: 5px;}
+#header .language:hover ul{display: block;}
+#header .language button{background: none; border: none;}
+#header .sitemap{background: none; border: none;}
+#header .pop_open{font-size: 0.9rem; margin-left: 10px;}
+
+
+
+#header #nav{width:calc(100% - 170px); float: left;
+             position: relative;}
+#header #nav .depth1 > li{float: left; padding-left: 50px; }
+#header #nav .depth1 > li > a{display: block; line-height: 60px;  }
+#header #nav .depth1 > li > a:hover{color: rgba(254,191,4,1);}
+#header #nav .depth1 ul{background-color: rgba(0, 0, 0, 0.5);
+                       font-size: 0.9rem; 
+                        color: #fff;
+                        width: 70%; 
+                        padding: 20px 0 ;
+                        position: absolute; 
+                        left: 0;
+                        top: 50px;
+                        display: none;
+                        z-index: 999999999;
+                        margin-left: 40px;}
+#header #nav .depth1 > li:hover ul{display: block;}
+
+#header #nav .depth1 ul li{display: inline-block;padding: 0 20px;}
+/*하위메뉴 사이에 점넣을려면 배경그림으로 만들기 background:url(../) no-repeat*/
+#header #nav .depth1 ul li:last-child{background:none;}
+/*********************section1****************************/
+#section1{position: relative; content: ''; display: block; clear: both;}
+#section1 .slider{width: 1920px; }
+#section1 .slider img{width: 100%;}
+#section1 #notice{width: 1450px; height: 40px; 
+                 background-color: rgba(255, 255, 255, 0.5); 
+                 position: absolute; top:610px ; left: 350px;
+                 line-height: 40px; overflow: hidden;}
+#section1 #notice .info{float: left; width: 500px;}
+#section1 #notice .info p{float: left; font-size: 1rem; margin-right: 15px;
+                          font-weight: 600; color: #121212;}
+#section1 #notice .serch{float: right; margin-right: 300px; width: 300px;}
+
+#section1 #notice .serch p{ float: left; font-size: 1rem; 
+                           font-weight: 600; color: #121212;}
+#section1 #notice .rolling1 ul li{margin-left: 76px;
+                              border:1px solid #e0e0e0;height:50px;width:360px;
+                              padding-top:5px;}
+#section1 #notice .rolling2 ul {margin-left: 76px;}
+#section1 #notice .rolling2 a{padding-left: 30px;}
+
+
+
+/*********************section1****************************/
+
+/*********************section2****************************/
+#section2{}
+#section2:after{content: ''; display: block; clear: both;}
+#section2 h2{text-align: center; margin-top: 70px; color: #000;}
+#section2 h3{text-align: center; margin-top: 20px; color: #727272;}
+#section2 .box_all{margin-left:200px; margin-bottom: 110px; }
+#section2 .box{float: left; width: 300px; height: 320px; 
+               border-top: 1px solid #ccc; 
+               border-left:1px solid #ccc;
+               border-bottom:1px solid #ccc ;
+               margin-top: 30px; 
+               position: relative; }
+#section2 .box:last-child{border-right: 1px solid #ccc;}
+#section2 .box .b_txt{display: none; }
+#section2 .box:hover .b_txt{display: block; }   
+#section2 .box:hover .t_txt{margin-top: 100px;}
+#section2 .box:hover .img_box{display: none; }
+#section2 .box:hover .more_box{background-color: #FFBC00; color: #fff;}
+
+#section2 .inner .box:before {content:"";position:absolute;
+                     left:-1px;top:-1px;width:0;height:0;
+                     border-top: 4px solid transparent;
+                     border-right: 4px solid transparent; 
+                     box-sizing: border-box;
+                     /*border-top: 4px solid transparent;
+                     border-right:4px solid transparent;*/}
+#section2 .inner .box:hover:before,
+#section2 .inner .box:focus:before{border-color:#FFBC00;  
+                             width: calc(100% + 2px); height: calc(100% + 2px);
+                             transition: width 0.4s, height 0.4s 0.4s;}
+#section2 .inner .box .more_box{display: block; transition: 0.4s;}                                          
+#section2 .inner .box:after {content:""; position:absolute; 
+                     right:1px; bottom:-1px; width:0; height:0; 
+                     box-sizing: border-box;
+                     border-bottom:4px solid transparent; 
+                     border-left:4px solid transparent;} 
+#section2 .inner .box:hover:after,
+#section2 .inner .box:focus:after{border-color:#FFBC00; 
+                            width: 100%; height: 100%; 
+                            transition: width 0.4s, height 0.4s 0.4s;}          
+#section2 .box .img_box{width: 100px; height: 120px; margin-left: 100px; margin-top: 45px;}
+#section2 .box .img_box img{width: 100px ; height: 120px ;}
+#section2 .box .t_txt{font-size: 1rem; font-weight: 800; text-align: center; margin-top: 10px; color: #000;}
+#section2 .box .b_txt{font-size: 0.8rem; text-align: center; margin-top: 10px; color: #727272;}
+#section2 .box .more_box{width: 100px; height: 40px; color: #FFBC00;
+                         border: 1px solid #ccc; margin-top: 20px; margin-left: 100px;} 
+#section2 .box .more_box a{font-size: 0.9rem; line-height: 40px; margin-left: 15px;}  
+/*********************section2****************************/
+
+/*********************section3****************************/
+#section3{margin-top: 110px; background-color: cornsilk;}
+#section3::after{content: ''; display: block; clear: both;}
+#section3 h2{padding-top: 70px; text-align: center;}
+#section3 h3{margin-top: 20px; text-align: center;}
+
+
+#section3 .regular {width: 100%; min-width: 1024px; margin: 30px auto; padding: 0;}
+
+#section3 .regular .slick-slide {width: 100%; margin: 0 50px; }
+#section3 .regular .slick-slide img{width: 90%;  margin: 0 auto; margin-bottom: 70px;} 
+
+#section3 .slick-arrow{position: absolute; top: 40%; z-index: 9999;
+       width: 100px; height: 50px; background: none; 
+       border: 2px solid transparent; display: block;
+       text-indent: -999999px;}
+#section3 .slick-prev{left:-50px; background: url("../images/left.png") no-repeat 0 50%;}
+#section3 .slick-next{right:-50px; background: url("../images/right.png") no-repeat 0 50%;}
+
+#section3 .slick-dots{position: absolute; bottom:10px; 
+      width: 100%; text-align: center; }
+#section3 .slick-dots li{display: inline-block; margin:0 5px; }
+#section3 .slick-dots li button{display: block; border: none;
+               text-indent: -999999px;
+               width: 10px; height: 10px;
+               border-radius: 50%;
+               background-color: rgba(0, 0, 0, 0.5);}
+#section3 .slick-dots li.slick-active button{background-color: rgb(245, 208, 0);}
+/*************************section4***********************/
+#section4::after{content: ''; display: block; clear: both;}
+#section4 .inner .sec4_tit{margin-top: 70px; width: 260px; height: 400px; 
+                           background: url("../images/sec4_img.png")no-repeat 0 50%; 
+                           position: relative; z-index: 999999999999;}
+
+
+#section4 .inner .sec4_tit .sec4_more a{ line-height: 30px;}
+#section4 .inner .sec4_tit .sec4_more{text-align: center;
+                                      width: 70px; height: 30px; background-color: #fff;
+                                      float: right; margin-top: 20px; margin-right: 10px;}
+#section4 .sec4_slide {width: calc(100% - 280px); float: right; margin-left: 20px; 
+                       margin-bottom: 110px; position: relative;}
+#section4 h2{margin-left: 10px; margin-top: -403px; margin-bottom: 20px;}
+#section4 h3{margin-left: 10px; margin-bottom: 20px;}
+
+#section4 .center div{margin-left: 20px; width: 100%; margin-top: 14px;}
+#section4 .slick-arrow{position: absolute; top: -10px; z-index: 9999;
+       width: 100px; height:30px; background: none; margin-left: 10px;
+       border: 2px solid transparent; display: block;
+       text-indent: -999999px;}
+      
+#section4 .slick-prev{left:0px; background: url("../images/left.png") no-repeat 0 50%;}
+#section4 .slick-next{right:820px; background: url("../images/right.png") no-repeat 0 50%;
+                     }
+
+#section4 .slick-dots{position: absolute; bottom:-50px; 
+      width: 100%; text-align: center; }
+#section4 .slick-dots li{display: inline-block; margin:0 5px; }
+#section4 .slick-dots li button{display: block; border: none;
+               text-indent: -999999px;
+               width: 10px; height: 10px;
+               border-radius: 50%;
+               background-color: rgba(0, 0, 0, 0.5);}
+#section4 .slick-dots li.slick-active button{background-color: rgb(245, 208, 0);}
+
+/*********************section5****************************/
+#section5::after{content: ''; display: block; clear: both;}
+#section5{width: 100%; height: 347px; background-color: #FFE3BB;}
+#section5 .video_box{width: 1024px; margin-left: 100px;}
+#section5 .video_box img{width: 100%;}
+/*********************section5****************************/
+
+/*********************section6****************************/
+#section6::after{content: ''; display: block; clear: both;}
+#section6 h2{text-align: center; margin-top: 70px;}
+#section6 h3{text-align: center; margin-top: 20px;}
+#section6 .event_box{float: left; margin-top: 30px; margin-left: 150px; margin-bottom: 110px;}
+#section6 .event_box li{float: left; margin-left: 20px;}
+#section6 .event_box li:first-child{margin-left: 0;}
+/*********************section6****************************/
+
+
+
+/*********************footer****************************/
+#footer::after{content: ''; display: block; clear: both;}
+#footer{width: 100%; height: 200px; background-color: #ccc;
+       opacity: 0.8;}
+#footer .logo_box{width: 150px; line-height: 10px;  }
+#footer .logo_box img{width: 100%;}
+#footer .footer_box{margin-left: 20px;}
+#footer .footer_box .t_footer{margin-top: 10px; font-size: 0.9rem; font-weight: 600; }
+#footer .t_footer a{border-right: 1px solid #121212; 
+                    padding-right: 5px;
+                    margin-right: 5px; 
+                    line-height: 2rem;
+                    font-weight: 700;
+                    color: #000;}
+#footer .t_footer a:last-child{border-right: 0;} 
+#footer .b_footer{font-size: 0.7rem;}                   
