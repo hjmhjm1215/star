@@ -32,7 +32,7 @@ $(function(){
     $(".regular").slick({
       dots: true,
       infinite: true,
-      centerMode: true,
+      centerMode: false,
       slidesToShow: 2,
       slidesToScroll: 2
     }); 

@@ -1,7 +1,7 @@
 .inner{max-width: 1280px; min-width: 1024px;
        margin: 0 auto;}
 h2{font-size: 1.875rem; color: #000;}
-h3{font-size: 1.25rem; color: #bbbbbb;}
+h3{font-size: 1.25rem; color: #838383; font-weight: normal;}
 
 #wrap{}
 #header{}
@@ -16,12 +16,13 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #quick li{margin-bottom: 6px;} 
 #quick li:last-child{margin-bottom: 0;}  
     
-.popup{width: 100%; min-width: 1024px; }
-.popup img{width: 100%;}
-.popup .pop_close{position: absolute; top: 45px; right: 50px; 
-                  background: none; width: 20px; height: 20px;
+.popup{width: 100%; min-width: 1024px; position: relative; }
+.popup img{width: 100%; }
+.popup .pop_close{position: absolute; top: 0px; right: 0px; 
+                  background-color: #fff; opacity: 0.8;
+                  width: 100px; height:100%;
                   border: none;}
-.popup .pop_close img{width: 100%;}                  
+.popup .pop_close img{width: 25%;}                  
                    
 
 .all_box{width: 100%; height: 100%; position: fixed; z-index: 9999;
@@ -61,7 +62,10 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #header .language:hover ul{height: 200px;}
 #header .language button{background: none; border: none; font-size: 0.9rem;}
 #header .sitemap{background: none; border: none;}
-#header .pop_open{width:30px; height: 30px;  margin-left: 10px;}
+#header .pop_open{width:30px; height: 50px; padding-top: -20px;
+                  display: inline-block; }
+
+#header .pop_open img{width: 100%;}
 
 
 
@@ -123,12 +127,12 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section1 .slick-dots{position: absolute; bottom:50px; 
             width: 100%; text-align: center; }
 #section1 .slick-dots li{display: inline-block; margin:0 5px; }
-#section1 .slick-dots li button{display: block; border: none;
+#section1 .slick-dots li button{display: block; border: 1px solid #FFBC00;
                      text-indent: -999999px;
-                     width: 10px; height: 10px;
+                     width: 15px; height: 15px;
                      border-radius: 50%;
-                     background-color: rgba(0, 0, 0, 0.5);}
-#section1 .slick-dots li.slick-active button{background-color: #fff;}
+                     background-color: rgba(255, 255, 255, 0.8);}
+#section1 .slick-dots li.slick-active button{background-color: #FFBC00;}
 
 
 /*********************section1****************************/
@@ -136,8 +140,8 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*********************section2****************************/
 #section2{}
 #section2:after{content: ''; display: block; clear: both;}
-#section2 h2{text-align: center; margin-top: 70px; color: #000;}
-#section2 h3{text-align: center; margin-top: 20px; color: #727272;}
+#section2 h2{text-align: center; margin-top: 70px; }
+#section2 h3{text-align: center; margin-top: 20px; }
 #section2 .box_all{margin-left:200px; margin-bottom: 110px; }
 #section2 .box{float: left; width:calc((100% - 150px) / 3); height: 320px; 
                border-top: 1px solid #ccc; 
@@ -183,23 +187,23 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*********************section2****************************/
 
 /*********************section3****************************/
-#section3{margin-top: 110px; height: 600px; background-color: cornsilk; }
+#section3{margin-top: 110px; height: 650px; background-color: cornsilk; }
 #section3::after{content: ''; display: block; clear: both;}
 #section3 h2{padding-top: 70px; text-align: center;}
 #section3 h3{margin-top: 20px; text-align: center;}
 
 
 #section3 .regular {width: 100%; min-width: 1024px; margin: 30px auto; padding: 0;}
-#section3 .regular .slick-slide {width: 100%; margin: 0 50px; position: relative;}
+#section3 .regular .slick-slide {width: 100%; margin: 0 20px; position: relative;}
 #section3 .regular .slick-slide img{width: 100%;  margin: 0 auto; } 
 #section3 .regular .txt1{ width:100%; height: calc(100% - 3px);  
                          position: absolute; top: 0; left: 0; overflow: hidden; }
-#section3 .regular .txt1 .txt1_01{font-weight: 600; text-align: center; font-size: 1.5rem; 
+#section3 .regular .txt1 .txt1_01{font-weight: 600; text-align: center; font-size: 2rem; 
                                    color: #fff; margin-top: 90px; overflow: hidden;}
-#section3 .regular .txt1 .txt1_02{text-align: center; font-size: 0.9rem; color: #fff;
-                                   margin-top: 30px; line-height: 20px; overflow: hidden;}   
-#section3 .regular span{border: 1px solid #fff; color: #fff; margin-left: 200px; 
-                        line-height: 70px; padding: 7px 7px 7px 7px ;}
+#section3 .regular .txt1 .txt1_02{text-align: center; font-size: 1rem; color: #fff;
+                                   margin-top: 30px; line-height: 25px; overflow: hidden;}   
+#section3 .regular span{border: 1px solid #fff; color: #fff; margin-left: 250px; 
+                        line-height: 150px; padding: 7px 7px 7px 7px ;}
 #section3 .regular span:hover{background-color: #fff; color: #121212;}                        
 #section3 .regular span a{text-align: center; font-size: 1rem; }                                                          
                     
@@ -209,18 +213,18 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
        width: 100px; height: 50px; background: none; 
        border: 2px solid transparent; display: block;
        text-indent: -999999px;}
-#section3 .slick-prev{left:-50px; background: url("../images/left.png") no-repeat 0 50%;}
-#section3 .slick-next{right:-50px; background: url("../images/right.png") no-repeat 0 50%;}
+#section3 .slick-prev{left:-80px; background: url("../images/left.png") no-repeat 0 50%;}
+#section3 .slick-next{right:-95px; background: url("../images/right.png") no-repeat 0 50%;}
 
 #section3 .slick-dots{position: absolute; bottom:-50px; 
       width: 100%; text-align: center; }
 #section3 .slick-dots li{display: inline-block; margin:0 5px; }
-#section3 .slick-dots li button{display: block; border: none;
+#section3 .slick-dots li button{display: block; border: 1px solid #FFBC00;
                                 text-indent: -999999px;
-                                width: 10px; height: 10px;
+                                width: 15px; height: 15px;
                                 border-radius: 50%;
-                                background-color: rgba(0, 0, 0, 0.5);}
-#section3 .slick-dots li.slick-active button{background-color: rgb(245, 208, 0);}
+                                background-color: rgba(255, 255, 255, 0.8);}
+#section3 .slick-dots li.slick-active button{background-color: #FFBC00;}
 /*************************section4***********************/
 #section4::after{content: ''; display: block; clear: both;}
 #section4 .inner .sec4_tit{margin-top: 70px; width: 270px; height: 400px; 
@@ -252,17 +256,19 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*#section4 .slick-dots{position: absolute; bottom:-50px; 
       width: 100%; text-align: center; display: none; }*/
 #section4 .slick-dots li{display: inline-block; margin:0 5px; }
-#section4 .slick-dots li button{display: block; border: none;
+#section4 .slick-dots li button{display: block; border: 1px solid #FFBC00;
                text-indent: -999999px;
-               width: 10px; height: 10px;
+               width: 15px; height: 15px;
                border-radius: 50%;
-               background-color: rgba(0, 0, 0, 0.5);}
-#section4 .slick-dots li.slick-active button{background-color: rgb(245, 208, 0);}
+               background-color: rgba(255, 255, 255, 0.8);}
+#section4 .slick-dots li.slick-active button{background-color: #FFBC00);}
 
 /*********************section5****************************/
 #section5::after{content: ''; display: block; clear: both;}
-#section5{width: 100%; background-color: #FFE3BB;}
-#section5 .video_box{width: 1280px; min-width: 1024px;}
+#section5{background-image: url(../images/thumnail.jpg);
+          background-position: center;
+          background-repeat: no-repeat;}
+#section5 .video_box{width: 800px; margin: 0 auto;}
 #section5 .video_box img{width: 100%;}
 /*********************section5****************************/
 
@@ -276,7 +282,8 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section6 .event_box li:first-child{margin-left: 0;}
 #section6 .event_box li img{transition: all 0.8s;width:100%;}
 #section6 .event_box li:hover img{transform: scale(1.3);}
-#section6 .event_box li .box_tit{font-weight: 700; font-size: 1.2rem;}
+#section6 .event_box li .box_tit{font-weight: 700; font-size: 1.2rem; margin-top: 10px;}
+#section6 .event_box li p{margin-top: 10px;}
 /*#section6 .event_box .scale{transition: all 0.8s;  transform: scale(0.9);}
 #section6 .event_box .smaller{ transition: all 0.8s;transform: scale(1);}*/
 /*********************section6****************************/
@@ -285,17 +292,18 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 
 /*********************footer****************************/
 #footer::after{content: ''; display: block; clear: both;}
-#footer{width: 100%; height: 150px; background-color: #ccc;
+#footer{width: 100%; height: 150px; background-color: rgb(44, 44, 44);
        opacity: 0.8;}
 #footer .logo_box{width: 150px; line-height: 10px;  padding-top: 20px;}
 #footer .logo_box img{width: 100%;}
 #footer .footer_box{margin-left: 20px;}
-#footer .footer_box .t_footer{float: left; margin-top: 10px; font-size: 0.9rem; font-weight: 600; }
-#footer .t_footer a{border-right: 1px solid #121212; 
+#footer .footer_box .t_footer{float: left; margin-top: 10px; font-size: 0.9rem;  }
+#footer .t_footer a{border-right: 1px solid #fff; 
                     padding-right: 5px;
                     margin-right: 5px; 
                     line-height: 2rem;
-                    font-weight: 700;
-                    color: #000;}
+                    font-weight: normal;
+                    color: #ffffff;}
 #footer .t_footer a:last-child{border-right: 0;} 
-#footer .b_footer{float: left; margin-left: 10px; margin-top: 20px; font-size: 0.7rem;}                   
+#footer .b_footer{float: left; margin-left: 10px; margin-top: 20px; font-size: 0.9rem;
+                  color: #fff;}                   
