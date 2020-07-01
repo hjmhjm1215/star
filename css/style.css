@@ -9,15 +9,21 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #footer{}
 
 /*********************header****************************/
-#quick{width:60px;height:390px; background-color: #fff; 
-       position:fixed; right:30px;top:70px;z-index: 99999;
+#quick{width:60px;height:390px;  
+       position:fixed; right:30px;top:120px;z-index: 99999;
        border-radius: 30px;}
 #quick li img{width: 100%;}       
 #quick li{margin-bottom: 6px;} 
-#quick li:last-child{margin-bottom: 0;}      
+#quick li:last-child{margin-bottom: 0;}  
+    
 .popup{width: 100%; min-width: 1024px; }
 .popup img{width: 100%;}
-.popup .pop_close{position: absolute; top: 35px; right: 50px;}
+.popup .pop_close{position: absolute; top: 45px; right: 50px; 
+                  background: none; width: 20px; height: 20px;
+                  border: none;}
+.popup .pop_close img{width: 100%;}                  
+                   
+
 .all_box{width: 100%; height: 100%; position: fixed; z-index: 9999;
          background: linear-gradient(to bottom, rgba(255,230,168,1) 0%,rgba(255,214,94,1) 50%,rgba(254,191,4,1) 100%); 
          display: none;}
@@ -32,30 +38,14 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 .all_box button{float: right; margin-right: 250px; margin-top: -50px;}
 
 /*********************슬라이더 디자인****************/
-.slider{min-width: 1024px; margin: 0 auto;} 
-.lazy{min-width: 1024px; }
-.slick-arrow{position: absolute; top: 50%; z-index: 9999;
-             width: 100px; height: 50px; background: none; 
-             border: 2px solid transparent; display: block;
-             text-indent: -999999px;}
-.slick-prev{left:50px; background: url("../images/left.png") no-repeat 0 50%;}
-.slick-next{right:50px; background: url("../images/right.png") no-repeat 0 50%;}
-.slick-dots{position: absolute; bottom:50px; 
-            width: 100%; text-align: center; }
-.slick-dots li{display: inline-block; margin:0 5px; }
-.slick-dots li button{display: block; border: none;
-                     text-indent: -999999px;
-                     width: 10px; height: 10px;
-                     border-radius: 50%;
-                     background-color: rgba(0, 0, 0, 0.5);}
-.slick-dots li.slick-active button{background-color: #fff;}
+
 /**********************슬라이더 디자인 끝***************/
 
 
 
 
 #header:after{content: ''; display: block; clear: both;}
-#header .logo{width: 170px; float: left;}
+#header .logo{width: 170px; margin-top: 8px; float: left;}
 #header .logo img{width: 100%;}
 #header .header_top{width: calc(100% - 170px);
                     text-align: right;  float: left;
@@ -65,19 +55,21 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
                   width: 4rem; text-align: center;/**/ }   
 #header .language ul{position: absolute; top: 1.25rem; left: 0; 
                      transition: 0.9s;height:0; overflow: hidden;
-                     margin-left: 3px;} 
+                     margin-left: 3px; } 
 #header .language ul li{margin-left: 5px;}
 #header .language ul li a{font-size: 0.8rem;}
 #header .language:hover ul{height: 200px;}
 #header .language button{background: none; border: none; font-size: 0.9rem;}
 #header .sitemap{background: none; border: none;}
-#header .pop_open{font-size: 0.9rem; margin-left: 10px;}
+#header .pop_open{width:30px; height: 30px;  margin-left: 10px;}
+
+
 
 
 
 #header #nav{width:calc(100% - 170px); float: left;
              position: relative;}
-#header #nav .depth1 > li{float: left; padding-left: 50px; }
+#header #nav .depth1 > li{float: left; padding-left: 50px; margin-top: -9px; }
 #header #nav .depth1 > li > a{display: block; line-height: 60px;  }
 #header #nav .depth1 > li > a:hover{color: rgba(254,191,4,1);}
 #header #nav .depth1 ul{background-color: rgba(0, 0, 0, 0.5);
@@ -90,21 +82,23 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
                         top: 50px;
                         display: none;
                         z-index: 999999999;
-                        margin-left: 40px;}
+                        margin-left: 40px;
+                        }
 #header #nav .depth1 > li:hover ul{display: block;}
 
 #header #nav .depth1 ul li{display: inline-block;padding: 0 20px;}
 /*하위메뉴 사이에 점넣을려면 배경그림으로 만들기 background:url(../) no-repeat*/
 #header #nav .depth1 ul li:last-child{background:none;}
 /*********************section1****************************/
-#section1{position: relative; content: ''; display: block; clear: both; min-width: 1024px;}
-#section1 .slider{width: 100%; min-width: 1024px;}
+#section1{content: ''; display: block; clear: both; min-width: 1024px;}
+#section1 .slider{width: 100%; min-width: 1024px; margin: 0 auto;}
 #section1 .slider img{width: 100%; min-width: 1024px;}
+#section1 .inner{position: relative;}
 #section1 #notice{width: 100%; height: 40px; min-width: 1024px;
-                 background-color: rgba(110, 64, 64, 0.5); 
-                 position: absolute; top:604px ; left: 350px;
+                 background-color: rgba(255, 255, 255, 0.5); 
+                 position: absolute; top:-44px ; bottom: 0;
                  line-height: 40px; overflow: hidden;  }
-#section1 #notice .info{float: left; width: 500px; }
+#section1 #notice .info{float: left; margin-left: 10px; width: 500px; }
 #section1 #notice .info p{float: left; font-size: 1rem; margin-right: 15px;
                           font-weight: 600; color: #121212;}
 #section1 #notice .serch{float: right; margin-right: 300px; width: 300px;}
@@ -119,6 +113,24 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 
 
 
+#section1 .slick-arrow{position: absolute; top: 50%; z-index: 9999;
+             width: 100px; height: 50px; background: none; 
+             border: 2px solid transparent; display: block;
+             text-indent: -999999px;}
+#section1 .slick-prev{left:50px; background: url("../images/left.png") no-repeat 0 50%;}
+#section1 .slick-next{right:50px; background: url("../images/right.png") no-repeat 0 50%;}
+
+#section1 .slick-dots{position: absolute; bottom:50px; 
+            width: 100%; text-align: center; }
+#section1 .slick-dots li{display: inline-block; margin:0 5px; }
+#section1 .slick-dots li button{display: block; border: none;
+                     text-indent: -999999px;
+                     width: 10px; height: 10px;
+                     border-radius: 50%;
+                     background-color: rgba(0, 0, 0, 0.5);}
+#section1 .slick-dots li.slick-active button{background-color: #fff;}
+
+
 /*********************section1****************************/
 
 /*********************section2****************************/
@@ -127,7 +139,7 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section2 h2{text-align: center; margin-top: 70px; color: #000;}
 #section2 h3{text-align: center; margin-top: 20px; color: #727272;}
 #section2 .box_all{margin-left:200px; margin-bottom: 110px; }
-#section2 .box{float: left; width: 300px; height: 320px; 
+#section2 .box{float: left; width:calc((100% - 150px) / 3); height: 320px; 
                border-top: 1px solid #ccc; 
                border-left:1px solid #ccc;
                border-bottom:1px solid #ccc ;
@@ -138,7 +150,7 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section2 .box:hover .b_txt{display: block; }   
 #section2 .box:hover .t_txt{margin-top: 100px;}
 #section2 .box:hover .img_box{display: none; }
-#section2 .box:hover .more_box{background-color: #FFBC00; color: #fff;}
+#section2 .box:hover .more_box{margin-top: 50px; background-color: #FFBC00; color: #fff;}
 
 #section2 .inner .box:before {content:"";position:absolute;
                      left:-1px;top:-1px;width:0;height:0;
@@ -171,7 +183,7 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 /*********************section2****************************/
 
 /*********************section3****************************/
-#section3{margin-top: 110px; background-color: cornsilk; }
+#section3{margin-top: 110px; height: 600px; background-color: cornsilk; }
 #section3::after{content: ''; display: block; clear: both;}
 #section3 h2{padding-top: 70px; text-align: center;}
 #section3 h3{margin-top: 20px; text-align: center;}
@@ -179,16 +191,20 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 
 #section3 .regular {width: 100%; min-width: 1024px; margin: 30px auto; padding: 0;}
 #section3 .regular .slick-slide {width: 100%; margin: 0 50px; position: relative;}
-#section3 .regular .slick-slide img{width: 90%;  margin: 0 auto; margin-bottom: 70px;} 
-#section3 .regular .txt1{ width: 440px; height: 295px; 
-                         position: absolute; top: 0; left: -565px; overflow: hidden; }
-#section3 .regular .txt1 .txt1_01{text-align: center; font-size: 1.5rem; color: #fff;
-                                   margin-top: 90px; overflow: hidden;}
-#section3 .regular .txt1 .txt1_02{text-align: center; font-size: 1rem; color: #fff;
-                                   margin-top: 30px; line-height: 20px; overflow: hidden;}                           
+#section3 .regular .slick-slide img{width: 100%;  margin: 0 auto; } 
+#section3 .regular .txt1{ width:100%; height: calc(100% - 3px);  
+                         position: absolute; top: 0; left: 0; overflow: hidden; }
+#section3 .regular .txt1 .txt1_01{font-weight: 600; text-align: center; font-size: 1.5rem; 
+                                   color: #fff; margin-top: 90px; overflow: hidden;}
+#section3 .regular .txt1 .txt1_02{text-align: center; font-size: 0.9rem; color: #fff;
+                                   margin-top: 30px; line-height: 20px; overflow: hidden;}   
+#section3 .regular span{border: 1px solid #fff; color: #fff; margin-left: 200px; 
+                        line-height: 70px; padding: 7px 7px 7px 7px ;}
+#section3 .regular span:hover{background-color: #fff; color: #121212;}                        
+#section3 .regular span a{text-align: center; font-size: 1rem; }                                                          
                     
 
-#section3 .regular div:hover .txt1{transition: 0.8s; opacity: 0.8; background-color: #808080; }
+#section3 .regular div .txt1{transition: 0.8s; opacity: 0.8; background-color: #808080; }
 #section3 .slick-arrow{position: absolute; top: 40%; z-index: 9999;
        width: 100px; height: 50px; background: none; 
        border: 2px solid transparent; display: block;
@@ -196,43 +212,45 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section3 .slick-prev{left:-50px; background: url("../images/left.png") no-repeat 0 50%;}
 #section3 .slick-next{right:-50px; background: url("../images/right.png") no-repeat 0 50%;}
 
-#section3 .slick-dots{position: absolute; bottom:10px; 
+#section3 .slick-dots{position: absolute; bottom:-50px; 
       width: 100%; text-align: center; }
 #section3 .slick-dots li{display: inline-block; margin:0 5px; }
 #section3 .slick-dots li button{display: block; border: none;
-               text-indent: -999999px;
-               width: 10px; height: 10px;
-               border-radius: 50%;
-               background-color: rgba(0, 0, 0, 0.5);}
+                                text-indent: -999999px;
+                                width: 10px; height: 10px;
+                                border-radius: 50%;
+                                background-color: rgba(0, 0, 0, 0.5);}
 #section3 .slick-dots li.slick-active button{background-color: rgb(245, 208, 0);}
 /*************************section4***********************/
 #section4::after{content: ''; display: block; clear: both;}
-#section4 .inner .sec4_tit{margin-top: 70px; width: 260px; height: 400px; 
+#section4 .inner .sec4_tit{margin-top: 70px; width: 270px; height: 400px; 
                            background: url("../images/sec4_img.png")no-repeat 0 50%; 
                            position: relative; z-index: 999999999999;}
 
 
-#section4 .inner .sec4_tit .sec4_more a{ line-height: 30px;}
+/*#section4 .inner .sec4_tit .sec4_more a{ line-height: 30px;}
 #section4 .inner .sec4_tit .sec4_more{text-align: center;
                                       width: 70px; height: 30px; background-color: #fff;
-                                      float: right; margin-top: 20px; margin-right: 10px;}
+                                      float: right; margin-top: 20px; margin-right: 10px;}*/
 #section4 .sec4_slide {width: calc(100% - 280px); float: right; margin-left: 20px; 
                        margin-bottom: 110px; position: relative;}
-#section4 h2{margin-left: 10px; margin-top: -403px; margin-bottom: 20px;}
-#section4 h3{margin-left: 10px; margin-bottom: 20px;}
+#section4 h2{margin-left: 30px; margin-top: -403px; margin-bottom: 20px;}
+#section4 h3{margin-left: 30px; margin-bottom: 20px;}
 
-#section4 .center div{margin-left: 20px; width: 100%; margin-top: 14px;}
+#section4 .center div{margin-left: 20px; width: 100%; margin-top: 27px;}
+#section4 .slick-list{position: relative;left:-120px}
 #section4 .slick-arrow{position: absolute; top: -10px; z-index: 9999;
-       width: 100px; height:30px; background: none; margin-left: 10px;
+       width: 50px; height:30px; background: none; margin-left: 30px;
        border: 2px solid transparent; display: block;
-       text-indent: -999999px;}
+       text-indent: -999999px; margin-top: 30px;
+       background-size:100%;background-position:0 50%;
+       background-repeat:no-repeat;}
       
-#section4 .slick-prev{left:0px; background: url("../images/left.png") no-repeat 0 50%;}
-#section4 .slick-next{right:820px; background: url("../images/right.png") no-repeat 0 50%;
-                     }
+#section4 .slick-prev{left:0px; background-image: url("../images/left.png");}
+#section4 .slick-next{left:70px; background-image: url("../images/right.png"); }
 
-#section4 .slick-dots{position: absolute; bottom:-50px; 
-      width: 100%; text-align: center; }
+/*#section4 .slick-dots{position: absolute; bottom:-50px; 
+      width: 100%; text-align: center; display: none; }*/
 #section4 .slick-dots li{display: inline-block; margin:0 5px; }
 #section4 .slick-dots li button{display: block; border: none;
                text-indent: -999999px;
@@ -243,8 +261,8 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 
 /*********************section5****************************/
 #section5::after{content: ''; display: block; clear: both;}
-#section5{width: 100%; height: 347px; background-color: #FFE3BB;}
-#section5 .video_box{width: 1024px; margin-left: 100px;}
+#section5{width: 100%; background-color: #FFE3BB;}
+#section5 .video_box{width: 1280px; min-width: 1024px;}
 #section5 .video_box img{width: 100%;}
 /*********************section5****************************/
 
@@ -253,22 +271,26 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
 #section6 h2{text-align: center; margin-top: 70px;}
 #section6 h3{text-align: center; margin-top: 20px;}
 #section6 .event_box{float: left; margin-top: 30px; margin-left: 150px; margin-bottom: 110px;}
-#section6 .event_box li{float: left; margin-left: 20px;}
+#section6 .event_box li{width: calc((100% - 40px) / 3); margin-left: 20px; float: left; }
+#section6 .event_box li > a{display: block; width:100%; overflow: hidden;}
 #section6 .event_box li:first-child{margin-left: 0;}
-#section6 .event_box .scale{transition: all 0.8s;  transform: scale(0.9);}
-#section6 .event_box .smaller{ transition: all 0.8s;transform: scale(1);}
+#section6 .event_box li img{transition: all 0.8s;width:100%;}
+#section6 .event_box li:hover img{transform: scale(1.3);}
+#section6 .event_box li .box_tit{font-weight: 700; font-size: 1.2rem;}
+/*#section6 .event_box .scale{transition: all 0.8s;  transform: scale(0.9);}
+#section6 .event_box .smaller{ transition: all 0.8s;transform: scale(1);}*/
 /*********************section6****************************/
 
 
 
 /*********************footer****************************/
 #footer::after{content: ''; display: block; clear: both;}
-#footer{width: 100%; height: 200px; background-color: #ccc;
+#footer{width: 100%; height: 150px; background-color: #ccc;
        opacity: 0.8;}
-#footer .logo_box{width: 150px; line-height: 10px;  }
+#footer .logo_box{width: 150px; line-height: 10px;  padding-top: 20px;}
 #footer .logo_box img{width: 100%;}
 #footer .footer_box{margin-left: 20px;}
-#footer .footer_box .t_footer{margin-top: 10px; font-size: 0.9rem; font-weight: 600; }
+#footer .footer_box .t_footer{float: left; margin-top: 10px; font-size: 0.9rem; font-weight: 600; }
 #footer .t_footer a{border-right: 1px solid #121212; 
                     padding-right: 5px;
                     margin-right: 5px; 
@@ -276,4 +298,4 @@ h3{font-size: 1.25rem; color: #bbbbbb;}
                     font-weight: 700;
                     color: #000;}
 #footer .t_footer a:last-child{border-right: 0;} 
-#footer .b_footer{font-size: 0.7rem;}                   
+#footer .b_footer{float: left; margin-left: 10px; margin-top: 20px; font-size: 0.7rem;}                   

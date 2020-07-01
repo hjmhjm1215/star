@@ -38,7 +38,7 @@ $(function(){
     }); 
 
     $(".center").slick({
-        dots: true,
+        dots: false,
         infinite: true,
         centerMode: true,
         slidesToShow: 4,
