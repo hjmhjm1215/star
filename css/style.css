@@ -63,8 +63,8 @@ h3{font-size: 1.25rem; color: #838383; font-weight: normal;}
 #header .language button{background: none; border: none; font-size: 0.9rem;}
 #header .sitemap{background: none; border: none;}
 #header .pop_open{width:30px; height: 50px; padding-top: -20px;
-                  display: inline-block; }
-
+                  display: inline-block; margin-left: 10px;
+                  transform:translate(0 , -5px)}
 #header .pop_open img{width: 100%;}
 
 
@@ -194,10 +194,10 @@ h3{font-size: 1.25rem; color: #838383; font-weight: normal;}
 
 
 #section3 .regular {width: 100%; min-width: 1024px; margin: 30px auto; padding: 0;}
-#section3 .regular .slick-slide {width: 100%; margin: 0 20px; position: relative;}
-#section3 .regular .slick-slide img{width: 100%;  margin: 0 auto; } 
+#section3 .regular .slick-slide {width: 100%; margin: 0 20px; position: relative; }
+#section3 .regular .slick-slide img{width: 100%;  margin: 0 auto; border-radius: 30px;} 
 #section3 .regular .txt1{ width:100%; height: calc(100% - 3px);  
-                         position: absolute; top: 0; left: 0; overflow: hidden; }
+                         position: absolute; top: 0; left: 0; overflow: hidden; border-radius: 30px; }
 #section3 .regular .txt1 .txt1_01{font-weight: 600; text-align: center; font-size: 2rem; 
                                    color: #fff; margin-top: 90px; overflow: hidden;}
 #section3 .regular .txt1 .txt1_02{text-align: center; font-size: 1rem; color: #fff;
